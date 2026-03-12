@@ -1,103 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- CSS ORIGINAL -->
-		<link rel="stylesheet" href="style.css" />
-		<!-- CSS FONT AWESOME -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<!-- GOOGLE FONT QUICKSAND -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
-		<title>Portofolio - Muhammad Rizky Ramadhan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Rizky Ramadhan, an SQA & System Engineer with experience in the financial technology and services industry."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Muhammad Rizky Ramadhan | Portfolio" />
+    <meta
+      property="og:description"
+      content="SQA & System Engineer portfolio with profile, core strengths, and contact links."
+    />
+    <meta property="og:type" content="website" />
+    <title>Muhammad Rizky Ramadhan | Portfolio</title>
 
-		<!-- Jquery -->
-		<script src="JS/jquery-3.6.3.min.js"></script>
-	</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-	<body>
-		<div class="loader-container">
-			<div class="ring"></div>
-			<div class="ring"></div>
-			<div class="ring"></div>
-			<span class="loading">loading...</span>
-		</div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Go to homepage">
+          <img src="assets/img/Logo Rizky.png" alt="Rizky logo" />
+          <span>Rizky</span>
+        </a>
 
-		<!-- NAVBAR -->
-		<div class="navbar-container">
-			<header>
-				<!-- LOGO -->
-				<div class="logo">
-					<img src="assets/img/Logo Rizky.png" alt="Logo-Rizky" />
-				</div>
-				<!-- NAVBAR LIST-->
-				<nav class="nav-list">
-					<div id="hamburger-menu">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
-						</svg>
-					</div>
-					<ul>
-						<li><a href="https://rizkyyrz.github.io/">Home</a></li>
-						<li><a href="https://rizkyyrz.github.io/about.html">About</a></li>
-						<li><a href="https://rizkyyrz.github.io/rzkypaysolusidigital">Projects</a></li>
-						<li><a href="https://api.whatsapp.com/send/?phone=62895353259492&text&type=phone_number&app_absent=0">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-		</div>
-		<!-- END OF NAVBAR -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button
+            id="menu-toggle"
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-		<!-- MAIN CONTENT -->
-		<main>
-			<div class="content">
-				<div class="content-description">
-					<div class="content-title">
-						<h1>
-							Hi There 👋🏼 <br />
-							My name is <span>Muhammad Rizky Ramadhan</span> <br />
-							Experienced SQA & System Engineer with a demonstrated history of working in the Financial Technology and Services Industry.<br /> 	
-						</h1>
-						<a href="https://www.linkedin.com/in/rizkyyrz/"><button>Hire Me</button></a>
-					</div>
-				</div>
-				<div class="content-image">
-					<img src="assets/img/Muhammad_Rizky_Ramadhan-removebg-preview.png" alt="Rizky Ramadhan" />
-				</div>
-			</div>
-			<!-- END OF MAIN -->
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-			<!-- SOCIAL MEDIA LINK -->
-			<aside>
-				<div class="social-media">
-					<ul>
-						<li>
-							<a href="https://linkedin.com/in/rizkyyrz" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-						</li>
-						<li>
-							<a href="https://twitter.com/rizkyyrz" target="_blank"><i class="fab fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href="https://facebook.com/screamomighty" target="_blank"><i class="fab fa-facebook"></i></a>
-						</li>
-						<li>
-							<a href="https://github.com/rizkyyrz" target="_blank"><i class="fab fa-github"></i></a>
-						</li>
-					</ul>
-				</div>
-			</aside>
-		</main>
+    <main id="main-content">
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I’m</p>
+            <h1>Muhammad Rizky <span>Ramadhan</span></h1>
+            <p class="lead">
+              SQA &amp; System Engineer with experience in the financial technology and
+              services industry, focused on quality, system reliability, and practical
+              delivery.
+            </p>
 
-		<script src="JS/index.js"></script>
-	</body>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/rizkyyrz/" target="_blank" rel="noopener noreferrer">Hire Me</a>
+              <a class="btn btn-secondary" href="https://github.com/rizkyyrz" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            </div>
+
+            <ul class="stats" aria-label="Quick profile summary">
+              <li>
+                <strong>Role</strong>
+                <span>SQA &amp; System Engineer</span>
+              </li>
+              <li>
+                <strong>Focus</strong>
+                <span>Quality, systems, delivery</span>
+              </li>
+              <li>
+                <strong>Industry</strong>
+                <span>Fintech &amp; services</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img
+                src="assets/img/Muhammad_Rizky_Ramadhan-removebg-preview.png"
+                alt="Portrait of Muhammad Rizky Ramadhan"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section-grid">
+          <div>
+            <p class="section-label">About</p>
+            <h2>Profile built for clarity and trust</h2>
+          </div>
+          <div>
+            <p>
+              This refreshed portfolio is structured to make the introduction clearer,
+              reduce friction for visitors, and present a stronger professional first impression.
+              The content now separates headline, summary, and actions so recruiters or clients
+              can scan the page faster.
+            </p>
+            <p>
+              It also improves accessibility, removes unnecessary dependency on jQuery,
+              and makes the mobile navigation easier to use.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="highlights">
+        <div class="container">
+          <p class="section-label">Highlights</p>
+          <h2>What is improved in this version</h2>
+
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>Cleaner hierarchy</h3>
+              <p>
+                The hero area now uses a stronger heading structure, clearer supporting text,
+                and focused call-to-action buttons.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Better accessibility</h3>
+              <p>
+                The navigation uses semantic button controls, proper ARIA attributes,
+                visible focus states, and a skip link.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Faster front-end</h3>
+              <p>
+                The blocking loader and jQuery dependency are removed, which makes the page
+                feel lighter and easier to maintain.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>More polished layout</h3>
+              <p>
+                Spacing, cards, contrast, and responsive behavior are refined to feel more
+                modern across desktop and mobile.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-box">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Let’s connect</h2>
+            <p>
+              Reach out through LinkedIn, GitHub, or WhatsApp for collaboration, project
+              discussion, or professional opportunities.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=62895353259492&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-secondary" href="https://linkedin.com/in/rizkyyrz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="social-bar" aria-label="Social links">
+      <ul>
+        <li><a href="https://linkedin.com/in/rizkyyrz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://twitter.com/rizkyyrz" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://facebook.com/screamomighty" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://github.com/rizkyyrz" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </aside>
+
+    <script src="JS/index.js"></script>
+  </body>
 </html>
